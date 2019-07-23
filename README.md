@@ -14,7 +14,7 @@ Inside the project's folder type:
 
 ### Run the docker container
 
-`$ docker run -v [project_path]:/usr/src/app --name current_bowlin -it bowling`
+`$ docker run -v [project_path]:/usr/src/app --name current_bowling -it bowling`
 
 After that you will be inside the IRB and able to type the name of the file you want to load.
 
@@ -29,3 +29,5 @@ To execute the tests is recommended that you access the running container from a
 `$ docker exec -it /bin/bash`
 
 Inside the terminal type `rspec` to run all te test cases.
+
+After running the tests the SimpleCov will generate the coverage files.
